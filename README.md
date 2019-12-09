@@ -8,7 +8,7 @@ Dependencies are as follows:
 
 sudo apt-get install ffmpeg python-picamera
 
-external drive to be preared and automounted as /media/usb 
+external drive to be prepared and automounted as /media/usb 
 
 example entry in /etc/fstab file:
 
@@ -19,3 +19,5 @@ uid=pi and gid=pi allows us to write without need of administrative privileges
 The code must be inside directory /home/pi/camCapture/
 
 Otherwise the directory must be changed in the code (obviously) 
+
+To turn off camera led add the following to /boot/config.txt : disable_camera_led=1
