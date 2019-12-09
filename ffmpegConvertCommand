@@ -1,0 +1,1 @@
+for i in *.h264; do ffmpeg -i "$i" -codec copy  "${i%.*}.mp4"; rm "$i"; done
