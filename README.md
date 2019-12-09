@@ -10,6 +10,6 @@ sudo apt-get install ffmpeg python-picamera
 external drive to be preared and automounted as /media/usb 
 example entry in /etc/fstab file:
 /dev/sda1 /media/usb vfat auto,nofail,noatime,users,rw,uid=pi,gid=pi 0 0
-# gid=pi allows us to write without need of administrative privileges
+uid=pi and gid=pi allows us to write without need of administrative privileges
 
 The code must be inside directory /home/pi/camCapture/. Otherwise the directory must be changed in the code (obviously) 
