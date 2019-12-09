@@ -21,3 +21,8 @@ The code must be inside directory /home/pi/camCapture/
 Otherwise the directory must be changed in the code (obviously) 
 
 To turn off camera led add the following to /boot/config.txt : disable_camera_led=1
+
+Push button is added to stop processes and shutdown the system properly. 
+Only after shutdown do you want to remove the usb key. Likewise, always plug in usb key before booting system.
+
+Todo : In case usb key is not big enough, perhaps best to add some function to watch out for this and take necessary precautions. For the moment I have not filled a usb device entirely. So I have no idea how the system will react when it happens.
